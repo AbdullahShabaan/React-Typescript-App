@@ -8,7 +8,7 @@ import {
 
 export const petApi = createApi({
   reducerPath: "petApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://pets-v2.dev-apis.com" }),
+  baseQuery: fetchBaseQuery({ baseUrl: "https://pets-v2.dev-apis.com" }),
   endpoints: (builder) => ({
     getPet: builder.query<PetApiResponse, number>({
       query: (id) => ({ url: "pets", params: { id } }),

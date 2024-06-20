@@ -1,0 +1,1 @@
+import{r as t,i as c}from"./index-D5Y8FJPM.js";function u({children:n}){const e=t.useRef(null);return e.current||(e.current=document.createElement("div")),t.useEffect(()=>{const r=document.getElementById("modal");return r&&e.current&&r.appendChild(e.current),()=>{r&&e.current&&r.removeChild(e.current)}},[]),c.createPortal(n,e.current)}export{u as default};

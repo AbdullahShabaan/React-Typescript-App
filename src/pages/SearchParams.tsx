@@ -4,7 +4,7 @@ import ErrorBoundary from "../components/ErrorBoundary";
 import AdoptPet from "../Contexts/AdoptPet";
 import PetType, { Animal, SearchParamsType } from "../types/Common";
 import { searchAllPets } from "../features/search-pets/SearchSlice";
-import { useAppSelector, useAppDispatch } from "../app/hooks";
+import { useAppSelector, useAppDispatch } from "../App/hooks";
 import { useGetBreedsQuery, usePetsSearchQuery } from "../services/Pets";
 
 const ANIMAL = ["bird", "cat", "dog", "rabbit", "reptile"];

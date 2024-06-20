@@ -7,7 +7,7 @@ import { useState } from "react";
 import { lazy, Suspense } from "react";
 import { LoaderApi } from "./components/Loader";
 import PetType from "./types/Common";
-import { store } from "./app/store";
+import { store } from "./App/store";
 import { Provider } from "react-redux";
 
 const Details = lazy(() => import("./pages/Details"));

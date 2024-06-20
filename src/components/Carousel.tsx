@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import { Component } from "react";
 
 type props = {
   images: string[];
@@ -25,9 +25,11 @@ class Carousel extends Component<props, state> {
                 data-index={index}
                 className={index === this.state.active ? "active" : ""}
                 onClick={(e) => {
-                  this.setState({
-                    active: +e.target.dataset.index,
-                  });
+                  if (e.currentTarget.dataset.index) {
+                    this.setState({
+                      active: +e.currentTarget.dataset.index,
+                    });
+                  }
                 }}
               ></img>
             );

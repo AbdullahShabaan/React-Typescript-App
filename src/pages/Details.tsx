@@ -1,5 +1,4 @@
 import { useNavigate, useParams } from "react-router-dom";
-import usePet from "../hooks/usePet";
 import { LoaderDetails } from "../components/Loader";
 import Carousel from "../components/Carousel";
 import { useState, useContext } from "react";
@@ -24,7 +23,7 @@ const Details = () => {
   return (
     <div className="details" style={{ textAlign: "center" }}>
       {!petQuery.data && <LoaderDetails />}
-      {petQuery.isError && <span>{petQuery.error.message}</span>}
+      {petQuery.isError && <span>Something Is Wrong!</span>}
       {petQuery.data && (
         <div>
           <h2 style={{ fontSize: "40px" }}>Name: {pet.name}</h2>

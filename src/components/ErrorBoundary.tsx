@@ -14,15 +14,15 @@ class ErrorBoundary extends Component<props, state> {
     this.state = { ...this.state, hasError: false };
   }
 
-  static getDerivedStateFromError(error: Error) {
-    // Update state so the next render will show the fallback UI.
-    return { error: true };
-  }
+  // static getDerivedStateFromError(error: Error) {
+  //   // Update state so the next render will show the fallback UI.
+  //   return { error: true };
+  // }
 
-  componentDidCatch(error: Error, errorInfo: ErrorInfo) {
-    // You can also log the error to an error reporting service
-    // logErrorToMyService(error, errorInfo);
-  }
+  // componentDidCatch(error: Error, errorInfo: ErrorInfo) {
+  //   // You can also log the error to an error reporting service
+  //   // logErrorToMyService(error, errorInfo);
+  // }
 
   render() {
     if (this.state.hasError) {
